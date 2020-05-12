@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: superspring
+    message: Welcome To superspring
+server:
+  port: 8080
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health.show-details: "always"
